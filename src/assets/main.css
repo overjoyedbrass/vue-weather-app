@@ -1,0 +1,112 @@
+@import "./base.css";
+@import "./spinner.css";
+#app {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.692) 0%, rgba(14, 14, 14, 0) 50%, rgb(0, 0, 0) 100%);
+}
+
+.sub-button {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: inherit;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    justify-content: center;
+    line-height: 1em;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 24px;
+    min-width: 5em;
+}
+
+.sub-button:active,
+.sub-button:hover {
+  outline: 0;
+}
+
+.sub-button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 6, 45);
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.sub-button:hover span {
+  background: none;
+}
+
+.options-button {
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #3d3d3d transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;   
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #3d3d3d;
+    border-radius: 5px;
+    border: 0px none #000000;
+}
+
+input {
+    display: flex;
+    flex: 0;
+    width: 10em;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.37);
+    height: 1.5em;
+    max-width: 7em;
+    font-size: 2em;
+    border-radius: 5px;
+    color: inherit;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: capitalize;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+::placeholder {
+    color: lightgray;
+    text-transform: lowercase;
+}
+input:focus {
+    border-color: rgba(100, 232, 255, 0.507);
+    outline: none;
+    box-sizing: border-box;
+}
